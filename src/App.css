@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+font-family: 'Ubuntu', sans-serif;
+background-color: #FF7F50;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+  margin: 50px 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.todoApp{
+  width: 700px;
+  padding:30px 10px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 4px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heading{
+  color:#555;
+}
+.addItems{
+  margin:30px auto;
+  position: relative;
+}
+.addItems input{
+  width:280px;
+  height:40px;
+  padding: 5px 15px;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #FF7F50;
+  color:#555;
+  font-weight: 500;
+}
+.addItems i{
+      font-size: 22px;
+    color: #ffffff;
+    padding: 9px 10px;
+    background: #FF7F50;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.showItems{
+  width: 350px;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+.showItems .eachItems{
+  display: flex;
+  padding:12px 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+}
+.showItems .eachItems h3{
+  font-weight: 500;
+}
+.showItems .eachItems i{
+  height:28px;
+  width: 28px;
+  line-height: 28px;
+  font-size: 22px;
+  cursor: pointer;
+
+  text-align: center;
+}
+.showItems .eachItems .ubtn{
+  margin-right: 5px;
+  color:green;
+}
+.showItems .eachItems .dbtn{
+  color:#DE3163;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.removeAllbtn{
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.removeAllbtn button{
+  padding:10px 29px;
+  width: 200px;
+  background: #FF7F50;
+  color:#ffffff;
+  border:none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
 }
